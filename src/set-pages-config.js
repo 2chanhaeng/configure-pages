@@ -27,6 +27,7 @@ function getConfigParserSettings({ staticSiteGenerator, generatorConfigFile, sit
       return {
         configurationFile: generatorConfigFile || detectOrDefaultConfigFile('nuxt.config'),
         blankConfigurationFile: `${__dirname}/blank-configurations/nuxt.js`,
+        allowWrappingCall: true,
         properties: {
           // Configure a base path on the router
           'router.base': path,
